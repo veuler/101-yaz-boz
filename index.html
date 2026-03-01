@@ -7,25 +7,20 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #0F172A; color: #94A3B8; line-height: 1.6; }
-        
         .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
         .hero { text-align: center; margin-bottom: 50px; }
         h1 { color: #F8FAFC; font-size: 2.5rem; margin-bottom: 10px; font-weight: 800; letter-spacing: 1px; }
         h2 { color: #38BDF8; font-size: 1.2rem; margin-bottom: 30px; font-weight: 600; }
         p.desc { font-size: 1.1rem; margin-bottom: 40px; color: #CBD5E1; }
-        
         .play-btn {
-            display: inline-flex; align-items: center; background-color: #1E293B; color: #F8FAFC; 
+            display: inline-flex; align-items: center; background-color: #1E293B; color: #F8FAFC;
             padding: 12px 24px; border-radius: 12px; text-decoration: none; font-weight: 700;
             border: 1px solid #334155; transition: 0.3s;
         }
         .play-btn:hover { border-color: #38BDF8; background-color: #0F172A; }
-        
-        /* Tam Metin Hukuki Bölüm Stilleri */
         .legal-section { background-color: #1E293B; padding: 40px; border-radius: 12px; border: 1px solid #334155; margin-bottom: 40px; }
         .legal-title { color: #F8FAFC; font-size: 1.8rem; margin-bottom: 5px; border-bottom: 2px solid #334155; padding-bottom: 10px; text-align: center; }
         .updated { font-size: 0.85rem; color: #64748B; font-style: italic; text-align: center; margin-bottom: 30px; }
-        
         .legal-section h3 { color: #F8FAFC; font-size: 1.2rem; margin-top: 30px; margin-bottom: 10px; }
         .legal-section h4 { color: #38BDF8; font-size: 1rem; margin-top: 15px; margin-bottom: 8px; }
         .legal-section p { font-size: 0.95rem; margin-bottom: 12px; }
@@ -35,17 +30,127 @@
     </style>
 </head>
 <body>
-
     <div class="container">
         <div class="hero">
             <h1>101 Yaz Boz</h1>
             <h2>Skor Takibi ve Paylaşımı</h2>
             <p class="desc">Kağıt kalem derdine son! Okey 101 masalarındaki en hızlı, en güvenilir ve en şık skor takip asistanı. Tekli ve eşli mod, tek dokunuşla ceza girişi ve WhatsApp'ta anında skor paylaşımı.</p>
-            
             <a href="#" class="play-btn">
                 <svg viewBox="0 0 512 512" style="width: 24px; margin-right:10px;" fill="#38BDF8"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
                 Google Play'den İndir
             </a>
+        </div>
+
+        <div class="legal-section" id="kosullar">
+            <h2 class="legal-title">KULLANIM KOŞULLARI</h2>
+            <p class="updated">Son güncelleme: 01 Mart 2026</p>
+
+            <h3>1. Taraflar ve Kapsam</h3>
+            <p>Bu Kullanım Koşulları ("Koşullar"), VeulerV ("Geliştirici") tarafından geliştirilen 101 Yaz-Boz mobil uygulamasını ("Uygulama") kullanan gerçek kişiler ("Kullanıcı") ile Geliştirici arasındaki hukuki ilişkiyi düzenlemektedir.</p>
+            <p>Uygulamayı indirerek, yükleyerek veya kullanarak bu Koşulları okuduğunuzu, anladığınızı ve kabul ettiğinizi beyan edersiniz. Koşulları kabul etmiyorsanız uygulamayı kullanmayınız.</p>
+            <hr>
+
+            <h3>2. Uygulamanın Tanımı ve Özellikleri</h3>
+            <h4>2.1 Ücretsiz Özellikler</h4>
+            <p>101 Yaz-Boz, 101 oyununa yönelik bir skor takip uygulamasıdır. Bu uygulama yalnızca bir skor takip ve hesaplama aracıdır. Herhangi bir kumar, bahis veya gerçek para ile oyun oynatma işlevi taşımaz. Ücretsiz sürümde şu özellikler sunulmaktadır:</p>
+            <ul>
+                <li>Tekli ve eşli modlarda skor kaydetme</li>
+                <li>Sınırsız skor kaydetme</li>
+                <li>Ceza butonu (101 ve 202 puan ekleme)</li>
+                <li>Round sistemi ile skor takibi</li>
+                <li>Oyun sonu sonuç ekranı</li>
+                <li>Kural yönetimi sekmesi</li>
+            </ul>
+            <h4>2.2 Premium Özellikler (Tek Seferlik Ödeme)</h4>
+            <p>Aşağıdaki özellikler tek seferlik ödeme ile kalıcı olarak açılır:</p>
+            <ul>
+                <li>Oyun geçmişinin kalıcı olarak saklanması</li>
+                <li>Yedekleme için skor geçmişinin .json formatında cihaza dışa aktarılması</li>
+            </ul>
+            <hr>
+
+            <h3>3. Premium Satın Alma Koşulları</h3>
+            <h4>3.1 Satın Alma</h4>
+            <p>Premium özellikler, Google Play üzerinden tek seferlik ödeme ile satın alınır. Ödeme Google Play Billing altyapısı üzerinden gerçekleştirilir ve geçerli fiyat uygulama içinde gösterilir.</p>
+            <h4>3.2 Kalıcı Kullanım Hakkı</h4>
+            <p>Premium satın alma, ömür boyu (lifetime) kullanım hakkı tanır. Aylık veya yıllık abonelik yoktur. Bir kez satın alan kullanıcı, uygulamanın mevcut ve gelecekteki sürümlerini Premium özellikleriyle birlikte sonsuza dek kullanma hakkına sahiptir.</p>
+            <h4>3.3 İade Politikası</h4>
+            <p>Uygulama içi satın alma iadeleri Google Play'in iade politikasına tabidir. Satın alma işleminden itibaren 48 saat içinde Google Play üzerinden iade talep edilebilir.</p>
+            <h4>3.4 Satın Alma Aktarımı</h4>
+            <p>Premium satın alma Google hesabınıza bağlıdır. Aynı Google hesabıyla giriş yapılan farklı cihazlarda Premium özellikler kullanılabilir. Farklı bir Google hesabına aktarım mümkün değildir.</p>
+            <h4>3.5 Fiyat Değişiklikleri</h4>
+            <p>Geliştirici, herhangi bir zamanda Premium fiyatını değiştirme hakkını saklı tutar. Değişiklikler yalnızca yeni alımları etkiler; mevcut Premium kullanıcılar etkilenmez.</p>
+            <h4>3.6 Satın Almaları Geri Yükleme</h4>
+            <p>Kullanıcı, uygulamayı silip yeniden yüklediğinde veya aynı Google hesabına bağlı yeni bir cihaza geçiş yaptığında, uygulama içindeki 'Satın Almaları Geri Yükle' seçeneğini kullanarak Premium erişimini ücretsiz olarak tekrar aktifleştirebilir.</p>
+            <hr>
+
+            <h3>4. Kullanıcı Yükümlülükleri</h3>
+            <p>Uygulamayı kullanırken aşağıdaki yükümlülüklere uymayı kabul edersiniz:</p>
+            <ul>
+                <li>Uygulamayı yalnızca yasal amaçlarla kullanmak</li>
+                <li>Tersine mühendislik, kaynak kod analizi veya kopyalama girişiminde bulunmamak</li>
+                <li>Uygulamanın güvenliğini tehdit edecek eylemlerde bulunmamak</li>
+                <li>Uygulamayı değiştirmek, uyarlamak veya türev çalışmalar oluşturmamak</li>
+                <li>Premium özellikleri yetkisiz yollarla elde etmeye çalışmamak</li>
+            </ul>
+            <hr>
+
+            <h3>5. Fikri Mülkiyet Hakları</h3>
+            <p>101 Yaz-Boz uygulaması; kaynak kodu, tasarımı, görselleri ve içeriği dahil olmak üzere tüm fikri mülkiyet hakları VeulerV bünyesinde saklıdır. Kullanıcılara yalnızca bu Koşullar çerçevesinde sınırlı, devredilemez, münhasır olmayan bir kullanım lisansı tanınmaktadır.</p>
+            <p>Uygulamanın herhangi bir parçasını çoğaltmak, dağıtmak veya ticari amaçlarla kullanmak açık yazılı izin olmaksızın yasaktır.</p>
+            <hr>
+
+            <h3>6. Verilerin Sorumluluğu</h3>
+            <p>Kullanıcının uygulama içine girdiği oyuncu isimleri, skorlar ve diğer veriler tamamen kullanıcının sorumluluğundadır. Geliştirici bu verilerin içeriğinden sorumlu değildir.</p>
+            <p>Uygulamanın silinmesi, cihazın sıfırlanması veya teknik arızalar nedeniyle verilerin kaybolması halinde Geliştirici sorumluluk üstlenmez. Önemli verilerinizi düzenli olarak yedeklemenizi öneririz.</p>
+            <p>Uygulama üzerinden oluşturulan oyun sonuç görsellerinin (skor tablolarının) üçüncü taraf platformlarda veya mesajlaşma uygulamalarında paylaşılması tamamen Kullanıcının inisiyatifindedir. Paylaşılan bu görsellerin yasadışı bahis, kumar veya herhangi bir suç unsuruna alet edilmesinden veya doğabilecek sosyal/hukuki anlaşmazlıklardan Geliştirici hiçbir şekilde sorumlu tutulamaz.</p>
+            <hr>
+
+            <h3>7. Garantilerin Reddi</h3>
+            <p>Uygulama "olduğu gibi" (as-is) sunulmaktadır. Geliştirici açık veya zımni hiçbir garanti vermemektedir:</p>
+            <ul>
+                <li>Uygulamanın kesintisiz veya hatasız çalışacağına dair garanti</li>
+                <li>Belirli bir amaca uygunluk garantisi</li>
+                <li>Hataların düzeltileceğine dair garanti</li>
+                <li>Üçüncü taraf hizmetlerin (Google Play, RevenueCat) sürekliliğine dair garanti</li>
+            </ul>
+            <hr>
+
+            <h3>8. Sorumluluk Sınırlaması</h3>
+            <p>Yürürlükteki yasaların izin verdiği azami ölçüde, Geliştirici aşağıdaki durumlardan doğan zararlardan sorumlu tutulamaz:</p>
+            <ul>
+                <li>Veri kaybı veya bozulması</li>
+                <li>Uygulamanın kullanılamamasından kaynaklanan zararlar</li>
+                <li>Dolaylı, tesadüfi veya özel zararlar</li>
+            </ul>
+            <p>Herhangi bir durumda Geliştirici'nin toplam sorumluluğu, kullanıcının Premium için ödediği tutarı geçemez.</p>
+            <hr>
+
+            <h3>9. Güncelleme ve Sonlandırma</h3>
+            <h4>9.1 Güncellemeler</h4>
+            <p>Geliştirici, uygulamada herhangi bir zamanda önceden haber vermeksizin değişiklik yapma hakkını saklı tutar.</p>
+            <h4>9.2 Uygulamanın Sonlandırılması</h4>
+            <p>Geliştirici uygulamayı yayından kaldırma hakkını saklı tutar. Böyle bir durumda mevcut Premium kullanıcılara en az 30 gün öncesinden bildirim yapılmaya çalışılacaktır.</p>
+            <hr>
+
+            <h3>10. Üçüncü Taraf Hizmetler</h3>
+            <p>Uygulama, Google Play ve RevenueCat gibi üçüncü taraf hizmetlerle entegre çalışmaktadır. Geliştirici, bu hizmetlerin içeriklerinden veya uygulamalarından sorumlu değildir.</p>
+            <hr>
+
+            <h3>11. Uygulanacak Hukuk</h3>
+            <p>Bu Koşullar Türkiye Cumhuriyeti kanunlarına tabidir. Uyuşmazlıklarda öncelikle uzlaşma yolu tercih edilecek, sağlanamaması durumunda Türkiye mahkemeleri yetkili olacaktır.</p>
+            <hr>
+
+            <h3>12. Koşullarda Değişiklik</h3>
+            <p>Geliştirici bu Koşulları herhangi bir zamanda güncelleme hakkını saklı tutar. Önemli değişiklikler uygulama içi bildirimle duyurulacaktır. Uygulamayı kullanmaya devam etmek, güncellenmiş Koşulların kabul edildiği anlamına gelir.</p>
+            <hr>
+
+            <h3>13. İletişim</h3>
+            <p>Bu Kullanım Koşullarına ilişkin sorularınız için:</p>
+            <ul>
+                <li>E-posta: veulerv@gmail.com</li>
+                <li>Uygulama: 101 Yaz-Boz (Google Play)</li>
+            </ul>
         </div>
 
         <div class="legal-section" id="gizlilik">
@@ -53,8 +158,9 @@
             <p class="updated">Son güncelleme: 01 Mart 2026</p>
 
             <h3>1. Giriş</h3>
-            <p>Bu Gizlilik Politikası, 101 Yaz Boz mobil uygulamasını ("Uygulama") kullananların kişisel verilerine ilişkin uygulamalarımızı açıklamaktadır. Uygulamayı indirip kullanarak bu politikada belirtilen koşulları kabul etmiş sayılırsınız.</p>
-            <p>Geliştirici: VeulerV | İletişim: veulerv@gmail.com</p>
+            <p>Bu Gizlilik Politikası, 101 Yaz-Boz mobil uygulamasını ("Uygulama") kullananların kişisel verilerine ilişkin uygulamalarımızı açıklamaktadır. Uygulamayı indirip kullanarak bu politikada belirtilen koşulları kabul etmiş sayılırsınız.</p>
+            <p>Geliştirici: VeulerV</p>
+            <p>İletişim: veulerv@gmail.com</p>
             <hr>
 
             <h3>2. Topladığımız Veriler</h3>
@@ -69,7 +175,8 @@
             <p>Bu veriler hiçbir şekilde bizim sunucularımıza aktarılmaz, bulutta depolanmaz veya üçüncü taraflarla paylaşılmaz.</p>
             
             <h4>2.2 Premium Satın Alma Verileri</h4>
-            <p>Satın alma işlemleri Google Play üzerinden gerçekleştirilir. Ödeme bilgileriniz yalnızca Google tarafından işlenir; uygulamamız hiçbir ödeme bilgisine erişemez. Satın alma doğrulaması için RevenueCat altyapısı kullanılmaktadır. RevenueCat, Google Play tarafından sağlanan anonim satın alma token'larını işleyebilir.</p>
+            <p>Satın alma işlemleri Google Play üzerinden gerçekleştirilir. Ödeme bilgileriniz yalnızca Google tarafından işlenir; uygulamamız hiçbir ödeme bilgisine erişemez.</p>
+            <p>Satın alma doğrulaması için RevenueCat altyapısı kullanılmaktadır. RevenueCat, Google Play tarafından sağlanan anonim satın alma token'larını işleyebilir. Gizlilik politikası: https://www.revenuecat.com/privacy</p>
             
             <h4>2.3 Toplamadığımız Veriler</h4>
             <p>Aşağıdaki veriler kesinlikle toplanmaz:</p>
@@ -83,79 +190,67 @@
             <hr>
 
             <h3>3. Verilerin Kullanım Amacı</h3>
-            <p>Cihazda saklanan veriler yalnızca oyun skorlarını ve geçmişini görüntülemek, Premium üyelik durumunu doğrulamak ve uygulama ayarlarını hatırlamak amacıyla kullanılır. Kullanıcı verilerini reklam, profil oluşturma veya pazarlama amacıyla kesinlikle kullanmıyoruz.</p>
+            <p>Cihazda saklanan veriler yalnızca aşağıdaki amaçlarla kullanılır:</p>
+            <ul>
+                <li>Oyun skorlarını ve geçmişini görüntülemek</li>
+                <li>Premium üyelik durumunu doğrulamak</li>
+                <li>Uygulama ayarlarını hatırlamak</li>
+            </ul>
+            <p>Kullanıcı verilerini reklam, profil oluşturma veya pazarlama amacıyla kesinlikle kullanmıyoruz.</p>
             <hr>
 
             <h3>4. Premium Özellik: JSON Dışa Aktarma</h3>
-            <p>Premium kullanıcılar skor geçmişlerini .json formatında dışa aktarabilir. Dışa aktarılan dosya yalnızca kullanıcının cihazına kaydedilir. Bu dosya sunucularımıza gönderilmez. Dosyanın başkalarıyla paylaşılması tamamen kullanıcının tercihidir.</p>
+            <p>Premium kullanıcılar skor geçmişlerini .json formatında dışa aktarabilir. Bu işlem hakkında bilinmesi gerekenler:</p>
+            <ul>
+                <li>Dışa aktarılan dosya yalnızca kullanıcının cihazına kaydedilir.</li>
+                <li>Bu dosya sunucularımıza veya herhangi bir üçüncü tarafa gönderilmez.</li>
+                <li>Dosyanın başkalarıyla paylaşılması tamamen kullanıcının tercihidir.</li>
+                <li>Dosya şifrelenmemiş, düz metin JSON formatındadır.</li>
+            </ul>
             <hr>
 
             <h3>5. Üçüncü Taraf Hizmetler</h3>
-            <p>Uygulama içi satın alma Google Play Billing üzerinden gerçekleştirilir. Satın alma yönetimi için RevenueCat kullanılmaktadır. Bu hizmetler dışında herhangi bir analitik, reklam veya izleme SDK'sı kullanılmamaktadır.</p>
+            <h4>5.1 Google Play Billing</h4>
+            <p>Uygulama içi satın alma Google Play Billing üzerinden gerçekleştirilir. Google'ın gizlilik politikası: https://policies.google.com/privacy</p>
+            <h4>5.2 RevenueCat</h4>
+            <p>Satın alma yönetimi için RevenueCat kullanılmaktadır. Gizlilik politikası: https://www.revenuecat.com/privacy</p>
+            <p>Bu hizmetler dışında herhangi bir analitik, reklam veya izleme SDK'sı kullanılmamaktadır.</p>
             <hr>
 
             <h3>6. Veri Güvenliği</h3>
-            <p>Uygulama verileri Android işletim sisteminin sandbox'ı içinde saklanır. Uygulamanın silinmesi durumunda tüm yerel veriler kalıcı olarak silinir.</p>
+            <p>Uygulama verileri Android işletim sisteminin sandbox'ı içinde saklanır. Diğer uygulamalar verilerinize erişemez. Bununla birlikte:</p>
+            <ul>
+                <li>Cihazınızın kaybolması veya çalınması durumunda verilere erişilebilir.</li>
+                <li>Uygulamanın silinmesi durumunda tüm yerel veriler kalıcı olarak silinir.</li>
+                <li>Cihazınızı başka biriyle paylaşıyorsanız, oyun geçmişiniz görülebilir.</li>
+            </ul>
             <hr>
 
             <h3>7. Kullanıcı Hakları</h3>
-            <p>Verileriniz cihazınızda saklandığından tam kontrole sahipsiniz. Tüm verileri silmek için uygulamayı kaldırmanız veya telefon ayarlarından verileri temizlemeniz yeterlidir.</p>
+            <p>Verileriniz cihazınızda saklandığından tam kontrole sahipsiniz:</p>
+            <ul>
+                <li>Tüm verileri silmek için uygulamayı kaldırmanız yeterlidir.</li>
+                <li>Telefon ayarlarından "Uygulamalar → 101 Yaz-Boz → Verileri Temizle" seçeneğiyle tüm verilerinizi silebilirsiniz.</li>
+                <li>Dışa aktarma özelliğiyle verilerinizin bir kopyasını alabilirsiniz.</li>
+            </ul>
+            <p>Sorularınız için: veulerv@gmail.com</p>
             <hr>
 
             <h3>8. Çocukların Gizliliği</h3>
             <p>Uygulama, 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamamaktadır. Genel kitleye yönelik bir skor tablosu uygulamasıdır.</p>
-        </div>
-
-        <div class="legal-section" id="kosullar">
-            <h2 class="legal-title">KULLANIM KOŞULLARI</h2>
-            <p class="updated">Son güncelleme: 01 Mart 2026</p>
-
-            <h3>1. Taraflar ve Kapsam</h3>
-            <p>Bu Kullanım Koşulları ("Koşullar"), VeulerV ("Geliştirici") tarafından geliştirilen 101 Yaz Boz mobil uygulamasını ("Uygulama") kullanan gerçek kişiler ("Kullanıcı") ile Geliştirici arasındaki hukuki ilişkiyi düzenlemektedir. Uygulamayı kullanarak bu Koşulları kabul ettiğinizi beyan edersiniz.</p>
             <hr>
 
-            <h3>2. Uygulamanın Tanımı ve Özellikleri</h3>
-            <p>101 Yaz Boz, 101 oyununa yönelik bir skor takip uygulamasıdır. Herhangi bir kumar, bahis veya gerçek para ile oyun oynatma işlevi taşımaz.</p>
-            <h4>2.1 Ücretsiz Özellikler</h4>
+            <h3>9. Politikada Değişiklikler</h3>
+            <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikler uygulama içinde duyurulacaktır.</p>
+            <hr>
+
+            <h3>10. İletişim</h3>
+            <p>Gizlilik politikamıza ilişkin sorularınız için:</p>
             <ul>
-                <li>Tekli ve eşli modlarda sınırsız skor kaydetme</li>
-                <li>Ceza butonu ve round sistemi</li>
-                <li>Oyun sonu sonuç ekranı ve kural yönetimi</li>
+                <li>E-posta: veulerv@gmail.com</li>
+                <li>Uygulama: 101 Yaz-Boz (Google Play)</li>
             </ul>
-            <h4>2.2 Premium Özellikler</h4>
-            <ul>
-                <li>Oyun geçmişinin kalıcı olarak saklanması</li>
-                <li>Yedekleme için skor geçmişinin .json formatında dışa aktarılması</li>
-            </ul>
-            <hr>
-
-            <h3>3. Premium Satın Alma Koşulları</h3>
-            <p>Premium özellikler, Google Play üzerinden tek seferlik ödeme ile satın alınır. Aylık veya yıllık abonelik yoktur. İadeler Google Play'in iade politikasına tabidir.</p>
-            <h4>3.6 Satın Almaları Geri Yükleme</h4>
-            <p>Kullanıcı, uygulamayı silip yeniden yüklediğinde veya aynı Google hesabına bağlı yeni bir cihaza geçiş yaptığında, uygulama içindeki "Satın Almaları Geri Yükle" seçeneğini kullanarak Premium erişimini ücretsiz olarak tekrar aktifleştirebilir.</p>
-            <hr>
-
-            <h3>4. Kullanıcı Yükümlülükleri</h3>
-            <p>Kullanıcı, uygulamayı yalnızca yasal amaçlarla kullanmayı, tersine mühendislik yapmamayı ve uygulamanın güvenliğini tehdit edecek eylemlerde bulunmamayı kabul eder.</p>
-            <hr>
-
-            <h3>5. Fikri Mülkiyet Hakları</h3>
-            <p>Uygulamanın kaynak kodu, tasarımı, görselleri ve içeriği dahil olmak üzere tüm fikri mülkiyet hakları VeulerV bünyesinde saklıdır.</p>
-            <hr>
-
-            <h3>6. Verilerin Sorumluluğu ve Sosyal Paylaşım</h3>
-            <p>Kullanıcının uygulama içine girdiği veriler tamamen kendi sorumluluğundadır. Uygulamanın silinmesi veya arızalar nedeniyle verilerin kaybolması halinde Geliştirici sorumluluk üstlenmez.</p>
-            <p><strong>Sosyal Paylaşım Sorumluluğu:</strong> Uygulama üzerinden oluşturulan maç sonuç görsellerinin (skor tablolarının) üçüncü taraf platformlarda veya mesajlaşma uygulamalarında paylaşılması tamamen Kullanıcının inisiyatifindedir. Paylaşılan bu görsellerin yasadışı bahis, kumar veya herhangi bir suç unsuruna alet edilmesinden veya doğabilecek sosyal/hukuki anlaşmazlıklardan Geliştirici hiçbir şekilde sorumlu tutulamaz.</p>
-            <hr>
-
-            <h3>7. Garantilerin Reddi ve Sorumluluk Sınırlaması</h3>
-            <p>Uygulama "olduğu gibi" sunulmaktadır. Geliştirici, kesintisiz çalışma veya veri kaybı yaşanmayacağı garantisi vermez. Geliştiricinin toplam sorumluluğu, kullanıcının Premium için ödediği tutarı geçemez.</p>
-            <hr>
-
-            <h3>8. Uygulanacak Hukuk ve İletişim</h3>
-            <p>Bu Koşullar Türkiye Cumhuriyeti kanunlarına tabidir. Sorularınız için <strong>veulerv@gmail.com</strong> adresi üzerinden iletişime geçebilirsiniz.</p>
         </div>
     </div>
-
 </body>
 </html>
